@@ -1,0 +1,64 @@
+header.zing-header .zing-search {
+    position: relative;
+}
+
+header.zing-header .zing-search .search-container {
+    background-color: #ffffff1a;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 5px;    
+    gap: 5px;
+    border-radius: 20px;
+}
+
+header.zing-header .zing-search .search-container .input-wrapper {
+    flex-grow: 1;
+}
+
+header.zing-header .zing-search .search-container button.search-icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+
+header.zing-header .zing-search .search-container .input-wrapper input {
+    width: 100%;
+    padding: 5px 0;
+    height: 34px;
+    background-color: transparent;
+    border: unset;
+    color: #eee;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header.zing-header .zing-search .search-container .input-wrapper input:focus-visible {
+    outline: unset;
+}
+
+header.zing-header .zing-search .suggest-list {
+    min-height: 250px;
+    width: 100%;
+    background-color: #34224f;
+    padding: 20px 10px 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+header.zing-header .zing-search.active .suggest-list {
+    display: inline-block;
+}
+header.zing-header .zing-search.active .search-container {
+    border-bottom-left-radius: unset;
+    border-bottom-right-radius: unset;
+}
+header.zing-header .zing-search .suggest-list .suggest-item {
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+header.zing-header .zing-search .suggest-list .suggest-item:hover {
+    background-color: #ffffff1a;
+}

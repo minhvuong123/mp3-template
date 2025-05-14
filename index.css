@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.mp3-website {
+    color: #fff;
+    height: 100%;
+}
+
+.mp3-website .zing-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.mp3-website .zing-container .zing-sidebar {
+    width: 240px;
+    min-width: 240px;
+    background-color: #231b2e;
+}
+
+.mp3-website .zing-container .zing-mainpage {
+    width: 100%;
+    flex-grow: 1;
+    background-color: #170f23;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.mp3-website .zing-container .zing-playlist {
+    border-left: 1px solid #ffffff1a;
+    width: 330px;
+    min-width: 330px;
+    padding: 0 8px 15px;
+}
+
+.mp3-website .zing-container .zing-mainpage .zing-content {
+    height: 100%;
+    flex: 1;
+    padding: 0 60px;
+}
+.mp3-website .zing-container .zing-mainpage .zing-content .zing-section {
+    height: 100%;
+}
