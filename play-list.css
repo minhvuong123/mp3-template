@@ -1,0 +1,20 @@
+.playlist-auto {
+    padding: 0 10px;
+}
+
+.playlist-auto .auto-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playlist-auto .auto-container .playlist-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sub-title {
+    color: #ffffff80;
+}

@@ -6,11 +6,18 @@
 
 html, body {
     height: 100%;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+body {
+    overflow: hidden;
 }
 
 .mp3-website {
     color: #fff;
     height: 100%;
+    position: relative;
 }
 
 .mp3-website .zing-container {
@@ -38,14 +45,69 @@ html, body {
     border-left: 1px solid #ffffff1a;
     width: 330px;
     min-width: 330px;
-    padding: 0 8px 15px;
+    padding: 20px 8px 15px;
+    position: relative;
+    overflow: hidden;
+    overflow-y: scroll;
+    --scrollbarThumbBC: transparent;
 }
 
 .mp3-website .zing-container .zing-mainpage .zing-content {
     height: 100%;
     flex: 1;
     padding: 0 60px;
+    padding-top: 20px;
+    position: relative;
+    overflow: hidden;
+    overflow-y: scroll;
+    --scrollbarThumbBC: transparent;
 }
+
 .mp3-website .zing-container .zing-mainpage .zing-content .zing-section {
     height: 100%;
 }
+
+.mp3-website .zing-container .zing-mainpage .zing-content::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+.mp3-website .zing-container .zing-mainpage .zing-content::-webkit-scrollbar {
+    width: 5px;
+	background-color: transparent;
+}
+
+.mp3-website .zing-container .zing-mainpage .zing-content::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: var(--scrollbarThumbBC);
+    
+}
+
+.mp3-website .zing-container .zing-playlist::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+.mp3-website .zing-container .zing-playlist::-webkit-scrollbar {
+    width: 5px;
+	background-color: transparent;
+}
+
+.mp3-website .zing-container .zing-playlist::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: var(--scrollbarThumbBC);
+    
+}
+
+.scroll-track {
+    position: absolute;
+    right: -4px;
+    top: 0;
+    width: 10px;
+    height: 100%;
+}
+

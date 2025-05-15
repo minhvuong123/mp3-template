@@ -1,0 +1,41 @@
+.zing-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.zing-sidebar .sidebar-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.zing-sidebar .sidebar-container .sidebar-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.zing-sidebar .sidebar-container .sidebar-group .sidebar-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  color: #dadada;
+  border-left: 2px solid transparent;
+}
+
+.zing-sidebar .sidebar-container .sidebar-group .sidebar-item:hover {
+  color: #fff;
+}
+.zing-sidebar .sidebar-container .sidebar-group .sidebar-item.active {
+  background-color: #ffffff1a;
+  border-left-color: #9b4de0;
+}
+
+.zing-sidebar .zing-create-playlist {
+  padding: 18px 20px;
+  cursor: pointer;
+}

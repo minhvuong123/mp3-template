@@ -1,14 +1,14 @@
-.media-container .media-title {
+.media-title {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.media-container .media-list {
+.media-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.media-container .media-list .media-item {
+.media-list .media-item {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,10 +17,13 @@
     justify-content: space-between;
     border-radius: 5px;
 }
-.media-container .media-list .media-item:hover {
+.media-list .media-item:hover {
     background-color: #ffffff1a;
 }
-.media-container .media-list .media-item .media-left {
+.media-list .media-item.active {
+    background-color: #9b4de0;
+}
+.media-list .media-item .media-left {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -29,7 +32,7 @@
     width: 50%;
 }
 
-.media-container .media-list .media-item .media-left .media-image {
+.media-list .media-item .media-left .media-image {
     min-width: 60px;
     height: 60px;
     background-color: #bdc1c7;
@@ -38,21 +41,21 @@
     align-items: center;
     justify-content: center;
 }
-.media-container .media-list .media-item .media-left .media-image .media-play {
+.media-list .media-item .media-left .media-image .media-play {
     display: none;
     cursor: pointer;
 }
-.media-container .media-list .media-item:hover .media-left .media-image .media-play {
+.media-list .media-item:hover .media-left .media-image .media-play {
     display: inline-block;
 }
 
-.media-container .media-list .media-item .media-left .media-content {
+.media-list .media-item .media-left .media-content {
     overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.media-container .media-list .media-item .media-left .media-content p {
+.media-list .media-item .media-left .media-content p {
     word-break: break-word;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -61,15 +64,15 @@
     cursor: pointer;
 }
 
-.media-container .media-list .media-item .media-right {
+.media-list .media-item .media-right {
     display: none;
 }
 
-.media-container .media-list .media-item:hover .media-right{
+.media-list .media-item:hover .media-right{
     display: inline-block;
 }
 
-.media-container .media-list .media-item .media-right .actions-item button {
+.media-list .media-item .media-right .actions-item button {
     width: 30px;
     height: 30px;
     cursor: pointer;

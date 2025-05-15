@@ -9,54 +9,63 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="./zing-search.css">
   <link rel="stylesheet" href="./media-block.css">
+  <link rel="stylesheet" href="./sidebar.css">
+  <link rel="stylesheet" href="./media-cards.css">
+  <link rel="stylesheet" href="./play-list.css">
+  <link rel="stylesheet" href="./play-control.css">
 </head>
 
 <body>
   <div class="mp3-website">
     <div class="zing-container">
+      <!-- side bar: start -->
       <aside class="zing-sidebar">
         <div class="sidebar-container">
-          <div class="sidebar-group">
+          <div class="sidebar-group mb-30">
             <div class="sidebar-item"><span>Thư viện</span></div>
-            <div class="sidebar-item"><span>Khám phá</span></div>
+            <div class="sidebar-item active"><span>Khám phá</span></div>
           </div>
-          <div class="sidebar-group">
+          <div class="zing-divide mlr-20"></div>
+          <div class="sidebar-group mt-20">
             <div class="sidebar-item"><span>Chủ đề & Thể loại</span></div>
             <div class="sidebar-item"><span>Top 100</span></div>
           </div>
         </div>
+        <div class="zing-divide"></div>
         <div class="zing-create-playlist">+ <span>Tạo playlist mới</span></div>
       </aside>
+      <!-- side bar: end -->
+      <!-- main content: start -->
       <div class="zing-mainpage">
         <div class="zing-content">
           <header class="zing-header">
             <!-- zing input search: start -->
-             <div class="zing-search"> <!-- add active to class to display suggest-list -->
-                <div class="search-container"> 
-                  <button class="search-icon"></button>
-                  <div class="input-wrapper">
-                    <input type="text" placeholder="Tìm kiếm bài hát, nghệ sĩ...">
-                  </div>
+            <div class="zing-search"> <!-- add active to class to display suggest-list -->
+              <div class="search-container">
+                <button class="search-icon"></button>
+                <div class="input-wrapper">
+                  <input type="text" placeholder="Tìm kiếm bài hát, nghệ sĩ...">
                 </div>
-                <div class="suggest-list">
-                  <div class="search-title">Đề xuất cho bạn</div>
-                  <div class="suggest-item">Bài hát 1</div>
-                  <div class="suggest-item">Bài hát 2</div>
-                  <div class="suggest-item">Bài hát 3</div>
-                  <div class="suggest-item">Bài hát 4</div>
-                </div>
-             </div>
-             <!-- zing input search: end -->
+              </div>
+              <div class="suggest-list">
+                <div class="search-title">Đề xuất cho bạn</div>
+                <div class="suggest-item">Bài hát 1</div>
+                <div class="suggest-item">Bài hát 2</div>
+                <div class="suggest-item">Bài hát 3</div>
+                <div class="suggest-item">Bài hát 4</div>
+              </div>
+            </div>
+            <!-- zing input search: end -->
           </header>
           <main class="zing-section">
-            <div class="media-container mt-50">
-              <div class="media-title">
+            <div class="media-container">
+              <!-- zing media list: start -->
+              <div class="media-title mt-50 mb-20">
                 <h3>Gợi ý cho bạn</h3>
                 <div class="media-reload">reload</div>
               </div>
-              <!-- zing media list: start -->
               <div class="media-list">
-                <div class="media-item w-30">
+                <div class="media-item w-1/3">
                   <div class="media-left">
                     <div class="media-image">
                       <div class="media-play">play</div>
@@ -73,7 +82,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="media-item w-30">
+                <div class="media-item w-1/3">
                   <div class="media-left">
                     <div class="media-image">
                       <div class="media-play">play</div>
@@ -90,7 +99,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="media-item w-30">
+                <div class="media-item w-1/3">
                   <div class="media-left">
                     <div class="media-image">
                       <div class="media-play">play</div>
@@ -109,26 +118,631 @@
                 </div>
               </div>
               <!-- zing media list: end -->
+              <!-- zing media card list: start -->
+              <div class="media-title mt-50 mb-20">
+                <h3>Chill</h3>
+                <span>Tất cả ></span>
+              </div>
+              <div class="media-cards">
+                <div class="card-item w-1/3">
+                  <div class="card-block">
+                    <div class="card-image"></div>
+                    <div class="card-actions">
+                      <span>heart</span>
+                      <span>play</span>
+                      <span>tripple</span>
+                    </div>
+                  </div>
+                  <p class="card-name">Thả mình vào dòng chảy của những giai điệu</p>
+                </div>
+                <div class="card-item w-1/3">
+                  <div class="card-block">
+                    <div class="card-image"></div>
+                    <div class="card-actions">
+                      <span>heart</span>
+                      <span>play</span>
+                      <span>tripple</span>
+                    </div>
+                  </div>
+                  <p class="card-name">Bài hát thứ 2</p>
+                </div>
+                <div class="card-item w-1/3">
+                  <div class="card-block">
+                    <div class="card-image"></div>
+                    <div class="card-actions">
+                      <span>heart</span>
+                      <span>play</span>
+                      <span>tripple</span>
+                    </div>
+                  </div>
+                  <p class="card-name">Bài hát thứ 3</p>
+                </div>
+              </div>
+              <!-- zing media card list: end -->
+              <!-- zing media list: start -->
+              <div class="media-title mt-50 mb-20">
+                <h3>Mới phát hành</h3>
+                <span>Tất cả ></span>
+              </div>
+              <div class="media-list">
+                <div class="media-item w-1/3">
+                  <div class="media-left">
+                    <div class="media-image">
+                      <div class="media-play">play</div>
+                    </div>
+                    <div class="media-content">
+                      <p>Tên bài hát</p>
+                      <p>Tên ca sĩ</p>
+                    </div>
+                  </div>
+                  <div class="media-right">
+                    <div class="actions-item">
+                      <button></button>
+                      <button></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-item w-1/3">
+                  <div class="media-left">
+                    <div class="media-image">
+                      <div class="media-play">play</div>
+                    </div>
+                    <div class="media-content">
+                      <p>Tên bài hát</p>
+                      <p>Tên ca sĩ</p>
+                    </div>
+                  </div>
+                  <div class="media-right">
+                    <div class="actions-item">
+                      <button></button>
+                      <button></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-item w-1/3">
+                  <div class="media-left">
+                    <div class="media-image">
+                      <div class="media-play">play</div>
+                    </div>
+                    <div class="media-content">
+                      <p>Tên bài hát</p>
+                      <p>Tên ca sĩ</p>
+                    </div>
+                  </div>
+                  <div class="media-right">
+                    <div class="actions-item">
+                      <button></button>
+                      <button></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-item w-1/3">
+                  <div class="media-left">
+                    <div class="media-image">
+                      <div class="media-play">play</div>
+                    </div>
+                    <div class="media-content">
+                      <p>Tên bài hát</p>
+                      <p>Tên ca sĩ</p>
+                    </div>
+                  </div>
+                  <div class="media-right">
+                    <div class="actions-item">
+                      <button></button>
+                      <button></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-item w-1/3">
+                  <div class="media-left">
+                    <div class="media-image">
+                      <div class="media-play">play</div>
+                    </div>
+                    <div class="media-content">
+                      <p>Tên bài hát</p>
+                      <p>Tên ca sĩ</p>
+                    </div>
+                  </div>
+                  <div class="media-right">
+                    <div class="actions-item">
+                      <button></button>
+                      <button></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-item w-1/3">
+                  <div class="media-left">
+                    <div class="media-image">
+                      <div class="media-play">play</div>
+                    </div>
+                    <div class="media-content">
+                      <p>Tên bài hát</p>
+                      <p>Tên ca sĩ</p>
+                    </div>
+                  </div>
+                  <div class="media-right">
+                    <div class="actions-item">
+                      <button></button>
+                      <button></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="media-item w-1/3">
+                  <div class="media-left">
+                    <div class="media-image">
+                      <div class="media-play">play</div>
+                    </div>
+                    <div class="media-content">
+                      <p>Tên bài hát</p>
+                      <p>Tên ca sĩ</p>
+                    </div>
+                  </div>
+                  <div class="media-right">
+                    <div class="actions-item">
+                      <button></button>
+                      <button></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- zing media list: end -->
+              <!-- Top 100: start -->
+              <div class="media-title mt-50 mb-20">
+                <h3>Top 100</h3>
+                <span>Tất cả ></span>
+              </div>
+              <div class="media-cards">
+                <div class="card-item w-1/3">
+                  <div class="card-block">
+                    <div class="card-image"></div>
+                    <div class="card-actions">
+                      <span>heart</span>
+                      <span>play</span>
+                      <span>tripple</span>
+                    </div>
+                  </div>
+                  <p class="card-name">Thả mình vào dòng chảy của những giai điệu</p>
+                </div>
+                <div class="card-item w-1/3">
+                  <div class="card-block">
+                    <div class="card-image"></div>
+                    <div class="card-actions">
+                      <span>heart</span>
+                      <span>play</span>
+                      <span>tripple</span>
+                    </div>
+                  </div>
+                  <p class="card-name">Bài hát thứ 2</p>
+                </div>
+                <div class="card-item w-1/3">
+                  <div class="card-block">
+                    <div class="card-image"></div>
+                    <div class="card-actions">
+                      <span>heart</span>
+                      <span>play</span>
+                      <span>tripple</span>
+                    </div>
+                  </div>
+                  <p class="card-name">Bài hát thứ 3</p>
+                </div>
+              </div>
+              <!-- Top 100: end -->
+              <!-- Album hot: start -->
+              <div class="media-title mt-50 mb-20">
+                <h3>Chill</h3>
+                <span>Tất cả ></span>
+              </div>
+              <div class="media-cards">
+                <div class="card-item w-1/3">
+                  <div class="card-block">
+                    <div class="card-image"></div>
+                    <div class="card-actions">
+                      <span>heart</span>
+                      <span>play</span>
+                      <span>tripple</span>
+                    </div>
+                  </div>
+                  <p class="card-name">Thả mình vào dòng chảy của những giai điệu</p>
+                </div>
+                <div class="card-item w-1/3">
+                  <div class="card-block">
+                    <div class="card-image"></div>
+                    <div class="card-actions">
+                      <span>heart</span>
+                      <span>play</span>
+                      <span>tripple</span>
+                    </div>
+                  </div>
+                  <p class="card-name">Bài hát thứ 2</p>
+                </div>
+                <div class="card-item w-1/3">
+                  <div class="card-block">
+                    <div class="card-image"></div>
+                    <div class="card-actions">
+                      <span>heart</span>
+                      <span>play</span>
+                      <span>tripple</span>
+                    </div>
+                  </div>
+                  <p class="card-name">Bài hát thứ 3</p>
+                </div>
+              </div>
+              <!-- Album hot: end -->
             </div>
           </main>
+          <div class="scroll-track"></div>
         </div>
         <div class="zing-playlist">
-          zing playlist
+          <div class="media-list">
+            <div class="media-item w-full">
+              <div class="media-left">
+                <div class="media-image">
+                  <div class="media-play">play</div>
+                </div>
+                <div class="media-content">
+                  <p>Tên bài hát</p>
+                  <p>Tên ca sĩ</p>
+                </div>
+              </div>
+              <div class="media-right">
+                <div class="actions-item">
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+            </div>
+            <div class="media-item w-full">
+              <div class="media-left">
+                <div class="media-image">
+                  <div class="media-play">play</div>
+                </div>
+                <div class="media-content">
+                  <p>Tên bài hát</p>
+                  <p>Tên ca sĩ</p>
+                </div>
+              </div>
+              <div class="media-right">
+                <div class="actions-item">
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="playlist-auto">
+            <div class="auto-container">
+              <div class="playlist-texts">
+                <span class="font-bold">Tự động phát</span>
+                <span class="sub-title">Dánh sách bài hát gọi ý</span>
+              </div>
+              <div class="auto-control">
+                switch icon
+              </div>
+            </div>
+          </div>
+          <div class="media-list">
+            <div class="media-item w-full">
+              <div class="media-left">
+                <div class="media-image">
+                  <div class="media-play">play</div>
+                </div>
+                <div class="media-content">
+                  <p>Tên bài hát</p>
+                  <p>Tên ca sĩ</p>
+                </div>
+              </div>
+              <div class="media-right">
+                <div class="actions-item">
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+            </div>
+            <div class="media-item w-full">
+              <div class="media-left">
+                <div class="media-image">
+                  <div class="media-play">play</div>
+                </div>
+                <div class="media-content">
+                  <p>Tên bài hát</p>
+                  <p>Tên ca sĩ</p>
+                </div>
+              </div>
+              <div class="media-right">
+                <div class="actions-item">
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+            </div>
+            <div class="media-item w-full">
+              <div class="media-left">
+                <div class="media-image">
+                  <div class="media-play">play</div>
+                </div>
+                <div class="media-content">
+                  <p>Tên bài hát</p>
+                  <p>Tên ca sĩ</p>
+                </div>
+              </div>
+              <div class="media-right">
+                <div class="actions-item">
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+            </div>
+            <div class="media-item w-full">
+              <div class="media-left">
+                <div class="media-image">
+                  <div class="media-play">play</div>
+                </div>
+                <div class="media-content">
+                  <p>Tên bài hát</p>
+                  <p>Tên ca sĩ</p>
+                </div>
+              </div>
+              <div class="media-right">
+                <div class="actions-item">
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+            </div>
+            <div class="media-item w-full">
+              <div class="media-left">
+                <div class="media-image">
+                  <div class="media-play">play</div>
+                </div>
+                <div class="media-content">
+                  <p>Tên bài hát</p>
+                  <p>Tên ca sĩ</p>
+                </div>
+              </div>
+              <div class="media-right">
+                <div class="actions-item">
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+            </div>
+            <div class="media-item w-full">
+              <div class="media-left">
+                <div class="media-image">
+                  <div class="media-play">play</div>
+                </div>
+                <div class="media-content">
+                  <p>Tên bài hát</p>
+                  <p>Tên ca sĩ</p>
+                </div>
+              </div>
+              <div class="media-right">
+                <div class="actions-item">
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+            </div>
+            <div class="media-item w-full">
+              <div class="media-left">
+                <div class="media-image">
+                  <div class="media-play">play</div>
+                </div>
+                <div class="media-content">
+                  <p>Tên bài hát</p>
+                  <p>Tên ca sĩ</p>
+                </div>
+              </div>
+              <div class="media-right">
+                <div class="actions-item">
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+            </div>
+            <div class="media-item w-full">
+              <div class="media-left">
+                <div class="media-image">
+                  <div class="media-play">play</div>
+                </div>
+                <div class="media-content">
+                  <p>Tên bài hát</p>
+                  <p>Tên ca sĩ</p>
+                </div>
+              </div>
+              <div class="media-right">
+                <div class="actions-item">
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+            </div>
+            <div class="media-item w-full">
+              <div class="media-left">
+                <div class="media-image">
+                  <div class="media-play">play</div>
+                </div>
+                <div class="media-content">
+                  <p>Tên bài hát</p>
+                  <p>Tên ca sĩ</p>
+                </div>
+              </div>
+              <div class="media-right">
+                <div class="actions-item">
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+            </div>
+            <div class="media-item w-full">
+              <div class="media-left">
+                <div class="media-image">
+                  <div class="media-play">play</div>
+                </div>
+                <div class="media-content">
+                  <p>Tên bài hát</p>
+                  <p>Tên ca sĩ</p>
+                </div>
+              </div>
+              <div class="media-right">
+                <div class="actions-item">
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+            </div>
+            <div class="media-item w-full">
+              <div class="media-left">
+                <div class="media-image">
+                  <div class="media-play">play</div>
+                </div>
+                <div class="media-content">
+                  <p>Tên bài hát</p>
+                  <p>Tên ca sĩ</p>
+                </div>
+              </div>
+              <div class="media-right">
+                <div class="actions-item">
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+            </div>
+            <div class="media-item w-full">
+              <div class="media-left">
+                <div class="media-image">
+                  <div class="media-play">play</div>
+                </div>
+                <div class="media-content">
+                  <p>Tên bài hát</p>
+                  <p>Tên ca sĩ</p>
+                </div>
+              </div>
+              <div class="media-right">
+                <div class="actions-item">
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+            </div>
+            <div class="media-item w-full">
+              <div class="media-left">
+                <div class="media-image">
+                  <div class="media-play">play</div>
+                </div>
+                <div class="media-content">
+                  <p>Tên bài hát</p>
+                  <p>Tên ca sĩ</p>
+                </div>
+              </div>
+              <div class="media-right">
+                <div class="actions-item">
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+            </div>
+            <div class="media-item w-full">
+              <div class="media-left">
+                <div class="media-image">
+                  <div class="media-play">play</div>
+                </div>
+                <div class="media-content">
+                  <p>Tên bài hát</p>
+                  <p>Tên ca sĩ</p>
+                </div>
+              </div>
+              <div class="media-right">
+                <div class="actions-item">
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+            </div>
+            <div class="media-item w-full">
+              <div class="media-left">
+                <div class="media-image">
+                  <div class="media-play">play</div>
+                </div>
+                <div class="media-content">
+                  <p>Tên bài hát</p>
+                  <p>Tên ca sĩ</p>
+                </div>
+              </div>
+              <div class="media-right">
+                <div class="actions-item">
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+            </div>
+            <div class="media-item w-full">
+              <div class="media-left">
+                <div class="media-image">
+                  <div class="media-play">play</div>
+                </div>
+                <div class="media-content">
+                  <p>Tên bài hát</p>
+                  <p>Tên ca sĩ</p>
+                </div>
+              </div>
+              <div class="media-right">
+                <div class="actions-item">
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-track"></div>
         </div>
       </div>
+      <!-- main content: end -->
     </div>
+    <!-- play control: start -->
     <div class="play-music-container">
       <div class="music-info">
-        music info
+        <div class="media-list">
+          <div class="media-item w-full">
+            <div class="media-left">
+              <div class="media-image"></div>
+              <div class="media-content">
+                <p>Tên bài hát</p>
+                <p>Tên ca sĩ</p>
+              </div>
+            </div>
+            <div class="media-right">
+              <div class="actions-item">
+                <button></button>
+                <button></button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="music-play-control">
-        music play control
+        <div class="play-controls">
+          <div class="control-icons">
+            <span>Back</span>
+            <span>Play</span>
+            <span>Next</span>
+          </div>
+          <div class="control-progress">
+            <span class="time left">02:26</span>
+            <div class="progress-bar">
+              <div class="progress-slider"></div>
+            </div>
+            <span class="time right active">05:13</span>
+          </div>
+        </div>
       </div>
       <div class="music-tools">
         music tools
       </div>
     </div>
+    <!-- play control: end -->
   </div>
+  <script src="./index.js"></script>
 </body>
 
 </html>

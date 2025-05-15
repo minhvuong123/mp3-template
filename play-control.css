@@ -1,0 +1,67 @@
+.mp3-website .play-music-container {
+    background-color: #170f23;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+}
+
+.mp3-website .play-music-container .media-list .media-item:hover {
+    background-color: transparent;
+}
+
+.mp3-website .play-music-container .media-list .media-item .media-right {
+    display: flex;
+}
+
+.mp3-website .play-music-container .music-play-control {
+    flex: 1;
+}
+
+.mp3-website .play-music-container .music-play-control .play-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mp3-website .play-music-container .music-play-control .play-controls .control-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mp3-website .play-music-container .music-play-control .play-controls .control-icons span {
+    cursor: pointer;
+}
+
+.mp3-website .play-music-container .music-play-control .play-controls .control-progress{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.mp3-website .play-music-container .music-play-control .play-controls .control-progress .progress-bar {
+    border-radius: 4px;
+    background: linear-gradient(to right, #fff 0%, #fff 46.6027056873377%, #ffffff4d 46.6027056873377%, #ffffff4d 100%);
+    align-self: center;
+    height: 4px;
+    flex: 1;
+    max-width: 400px;
+}
+
+.mp3-website .play-music-container .music-play-control .play-controls .control-progress .time {
+    font-size: 12px;
+    color: #ffffff4d;
+}
+
+.mp3-website .play-music-container .music-play-control .play-controls .control-progress .time.active {
+    color: #fff;
+}
