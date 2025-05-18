@@ -25,6 +25,12 @@
 .mlr-20 {
     margin: 0 20px;
 }
+.gap-10 {
+    gap: 10px;
+}
+.d-flex {
+    display: flex;
+}
 .zing-divide {
     height: 1px;
     background-color: #ffffff1a;

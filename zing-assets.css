@@ -1,0 +1,104 @@
+.zing-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.zing-header .zing-asset {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.zing-header .zing-asset .zing-setting {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #ffffff1a;
+  cursor: pointer;
+}
+
+.zing-header .zing-asset .zing-setting .setting-popup {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background-color: #34224f;
+  border-radius: 5px;
+  width: 290px;
+  display: none;
+  padding: 5px;
+  z-index: 1000;
+}
+
+.zing-header .zing-asset .zing-setting.active .setting-popup {
+  display: inline-block;
+}
+
+.zing-header .zing-asset .zing-setting .setting-popup .setting-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  color: #dadada;
+  border-left: 2px solid transparent;
+  white-space: nowrap;
+}
+
+.zing-header .zing-asset .zing-setting .setting-popup .setting-item:hover {
+  background-color: #ffffff1a;
+}
+
+.zing-header .zing-asset .zing-setting .setting-popup .setting-item.item-text {
+  color: #ffffff4d;
+}
+
+.zing-header .zing-asset .zing-setting .setting-popup .setting-item.item-text:hover {
+  color: #fff;
+}
+
+.zing-header .zing-asset .zing-user {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #ffffff1a;
+  cursor: pointer;
+}
+
+.zing-header .zing-asset .zing-user .user-popup {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background-color: #34224f;
+  border-radius: 5px;
+  width: 290px;
+  display: none;
+  padding: 20px 10px;
+  z-index: 1000;
+}
+
+.zing-header .zing-asset .zing-user.active .user-popup {
+  display: inline-block;
+}
+
+.zing-header .zing-asset .zing-user .user-popup .user-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  color: #dadada;
+  border-left: 2px solid transparent;
+  white-space: nowrap;
+  background-color: #9b4de0;
+  border-radius: 20px;
+}
