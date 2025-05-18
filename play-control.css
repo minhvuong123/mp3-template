@@ -46,15 +46,41 @@
     justify-content: center;
     gap: 10px;
     align-items: center;
+    --progressValue: 0%;
 }
 
 .mp3-website .play-music-container .music-play-control .play-controls .control-progress .progress-bar {
     border-radius: 4px;
-    background: linear-gradient(to right, #fff 0%, #fff 46.6027056873377%, #ffffff4d 46.6027056873377%, #ffffff4d 100%);
+    background-color: #ffffff4d;
     align-self: center;
     height: 4px;
     flex: 1;
     max-width: 400px;
+    position: relative;
+    transition: height 0.1s ease-in-out;
+    --progressValue: 0%;
+}
+
+.mp3-website .play-music-container .music-play-control .play-controls .control-progress .progress-bar:hover {
+    height: 6px;
+}
+
+.mp3-website .play-music-container .music-play-control .play-controls .control-progress .progress-bar .progress-thumb {
+    background-color: #ffffff4d;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.mp3-website .play-music-container .music-play-control .play-controls .control-progress .progress-bar .progress-slider {
+    background-color: #fff;
+    align-self: center;
+    height: 100%;
+    border-radius: 4px;
+    width: var(--progressValue);
 }
 
 .mp3-website .play-music-container .music-play-control .play-controls .control-progress .time {

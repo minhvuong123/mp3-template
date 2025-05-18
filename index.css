@@ -24,6 +24,7 @@ body {
     display: flex;
     flex-direction: row;
     height: 100%;
+    padding-bottom: 80px;
 }
 
 .mp3-website .zing-container .zing-sidebar {
