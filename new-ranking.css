@@ -1,0 +1,35 @@
+.ranking-container .ranking-list .ranking-item {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.ranking-container .ranking-list .ranking-item .ranking-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.ranking-container .ranking-list .ranking-item .ranking-info .ranking-image {
+  width: 40px;
+  height: 40px;
+  background-color: #bdc1c7;
+}
+
+.ranking-container .ranking-list .ranking-item .ranking-info .ranking-texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.ranking-container .ranking-list .ranking-item .ranking-info .song-name {
+  flex: 1;
+  text-align: center;
+}
+
+.ranking-container .ranking-list .ranking-item:hover {
+  background-color: #ffffff1a;
+}

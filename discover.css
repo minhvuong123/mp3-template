@@ -1,0 +1,17 @@
+.discover-container .discover-content .tabs-container .tab-header {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.discover-container .discover-content .tabs-container .tab-header .tab-item {
+  padding: 18px 0;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+
+.discover-container .discover-content .tabs-container .tab-header .tab-item.active {
+  padding: 18px 0;
+  display: inline-block;
+  border-color:#9b4de0;
+}
