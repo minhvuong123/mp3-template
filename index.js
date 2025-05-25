@@ -118,3 +118,23 @@ function handlePlayList(){
 
 handlePlayList();
 
+
+function handleCreatePlayList() {
+  const createPlayListEl = document.querySelector('.zing-create-playlist');
+
+  createPlayListEl.addEventListener('click', () => {
+    const playListPopup = document.querySelector('.playlist-popup');
+    playListPopup.classList.toggle('active');
+  })
+
+   const closIcon = document.querySelector('.playlist-popup .icon-close');
+
+  closIcon.addEventListener('click', (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    const playListPopup = document.querySelector('.playlist-popup');
+    playListPopup.classList.toggle('active');
+  })
+}
+handleCreatePlayList();
+

@@ -4,6 +4,12 @@
   gap: 20px;
   align-items: center;
   padding: 12px 0;
+  position: relative;
+}
+
+.ranking-container .ranking-list .ranking-item .ranking-number {
+  font-size: 30px;
+  padding: 0 15px;
 }
 
 .ranking-container .ranking-list .ranking-item .ranking-info {
@@ -30,6 +36,19 @@
   text-align: center;
 }
 
+.ranking-container .ranking-list .ranking-item .ranking-assets {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+  display: none;
+  align-items: center;
+}
+
 .ranking-container .ranking-list .ranking-item:hover {
   background-color: #ffffff1a;
+}
+
+.ranking-container .ranking-list .ranking-item:hover .ranking-assets {
+  display: flex;
 }

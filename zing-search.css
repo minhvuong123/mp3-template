@@ -1,5 +1,14 @@
 header.zing-header .zing-search {
     position: relative;
+    display: flex;
+    gap: 20px;
+}
+
+header.zing-header .zing-search .direct-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
 }
 
 header.zing-header .zing-search .search-container {

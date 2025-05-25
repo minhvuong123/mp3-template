@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./play-list.css">
   <link rel="stylesheet" href="./play-control.css">
   <link rel="stylesheet" href="./zing-assets.css">
+  <link rel="stylesheet" href="./type-song.css">
 </head>
 
 <body>
@@ -34,7 +35,7 @@
           </div>
           <div class="zing-divide mlr-20"></div>
           <div class="sidebar-group mt-20">
-            <div class="sidebar-item"><a href="./new-publish.html">Nghe gần đây</a></div>
+            <div class="sidebar-item"><a href="./nearest-listen.html">Nghe gần đây</a></div>
             <div class="sidebar-item"><a href="./favorite-song.html">Bài hát yêu thích</a></div>
             <div class="sidebar-item"><a href="./playlist.html">Playlist</a></div>
             <div class="sidebar-item"><a href="./album.html">Album</a></div>
@@ -51,6 +52,10 @@
           <header class="zing-header">
             <!-- zing input search: start -->
             <div class="zing-search"> <!-- add active to class to display suggest-list -->
+              <div class="direct-icon">
+                <span>back</span>
+                <span>forward</span>
+              </div>
               <div class="search-container">
                 <button class="search-icon"></button>
                 <div class="input-wrapper">
@@ -94,132 +99,37 @@
             <!-- zing input search: end -->
           </header>
           <main class="zing-section">
-            <div class="media-container">
-              <!-- zing media list: start -->
-              <div class="media-title mt-50 mb-20">
-                <h3>Gợi ý cho bạn</h3>
-                <div class="media-reload">reload</div>
+            <div class="hub-container">
+              <div class="hub-banner mt-50">
+                <div class="banner-image"></div>
               </div>
-              <div class="media-list">
-                <div class="media-item w-1/3">
-                  <div class="media-left">
-                    <div class="media-image">
-                      <div class="media-play">play</div>
-                    </div>
-                    <div class="media-content">
-                      <p>Tên bài hát</p>
-                      <p>Tên ca sĩ</p>
-                    </div>
-                  </div>
-                  <div class="media-right">
-                    <div class="actions-item">
-                      <button></button>
-                      <button></button>
-                      <div class="media-item-popup">
-                        <div class="item-header">
-                          <div class="item-header-image"></div>
-                          <div class="item-header-texts">
-                            <span>Hắc Nguyệt Quang (Trường Nguyệt Tẫn Minh OST)</span>
-                            <span>Mao Bất Dịch / 毛不易, Trương Bích Thần / 張碧晨</span>
-                          </div>
-                        </div>
-                        <div class="zing-divide mtb-20"></div>
-                        <div class="item-list">
-                          <div class="media-item"><span>icon</span> Thêm vào thư viện</div>
-                          <div class="media-item"><span>icon</span> Thêm vào danh sách phát</div>
-                          <div class="media-item"><span>icon</span> Phát tiếp theo</div>
-                          <div class="media-item"><span>icon</span> Phát nội dung tương tự</div>
-                          <div class="media-item"><span>icon</span> Thêm vào playlist</div>
-                          <div class="media-item"><div>icon <span>Chia sẽ</span></div> <span>></span></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="hub-block mt-50">
+                <h1>Nổi bật</h1>
+                <div class="hub-list mt-20">
+                  <div class="hub-item w-1/4">BHX Nhạc Mới</div>
+                  <div class="hub-item w-1/4">Top 100</div>
+                  <div class="hub-item w-1/4">Nhạc Cover</div>
+                  <div class="hub-item w-1/4">Nhạc Trẻ</div>
                 </div>
               </div>
-              <!-- zing media list: end -->
-              <!-- zing media card list: start -->
-              <div class="media-title mt-50 mb-20">
-                <h3>Chill</h3>
-                <span>Tất cả ></span>
-              </div>
-              <div class="media-cards">
-                <div class="card-item w-1/3">
-                  <div class="card-block">
-                    <div class="card-image"></div>
-                    <div class="card-actions">
-                      <span>heart</span>
-                      <span>play</span>
-                      <span>tripple</span>
-                    </div>
-                  </div>
-                  <p class="card-name">Thả mình vào dòng chảy của những giai điệu</p>
+              <div class="hub-block mt-50">
+                <h1>Quốc Gia</h1>
+                <div class="hub-list mt-20">
+                  <div class="hub-item w-1/4">Nhạc Việt</div>
+                  <div class="hub-item w-1/4">Nhạc Mỹ</div>
+                  <div class="hub-item w-1/4">Nhạc Hoa</div>
+                  <div class="hub-item w-1/4">Nhạc Hàn</div>
                 </div>
               </div>
-              <!-- zing media card list: end -->
-              <!-- zing media list: start -->
-              <div class="media-title mt-50 mb-20">
-                <h3>Mới phát hành</h3>
-                <span>Tất cả ></span>
-              </div>
-              <div class="media-list">
-                <div class="media-item w-1/3">
-                  <div class="media-left">
-                    <div class="media-image">
-                      <div class="media-play">play</div>
-                    </div>
-                    <div class="media-content">
-                      <p>Tên bài hát</p>
-                      <p>Tên ca sĩ</p>
-                    </div>
-                  </div>
-                  <div class="media-right">
-                    <div class="actions-item">
-                      <button></button>
-                      <button></button>
-                    </div>
-                  </div>
+              <div class="hub-block mt-50">
+                <h1>Tậm Trạng Vá Hoạt Động</h1>
+                <div class="hub-list mt-20">
+                  <div class="hub-item w-1/4">Nhạc Việt</div>
+                  <div class="hub-item w-1/4">Nhạc Mỹ</div>
+                  <div class="hub-item w-1/4">Nhạc Hoa</div>
+                  <div class="hub-item w-1/4">Nhạc Hàn</div>
                 </div>
               </div>
-              <!-- zing media list: end -->
-              <!-- Top 100: start -->
-              <div class="media-title mt-50 mb-20">
-                <h3>Top 100</h3>
-                <span>Tất cả ></span>
-              </div>
-              <div class="media-cards">
-                <div class="card-item w-1/3">
-                  <div class="card-block">
-                    <div class="card-image"></div>
-                    <div class="card-actions">
-                      <span>heart</span>
-                      <span>play</span>
-                      <span>tripple</span>
-                    </div>
-                  </div>
-                  <p class="card-name">Thả mình vào dòng chảy của những giai điệu</p>
-                </div>
-              </div>
-              <!-- Top 100: end -->
-              <!-- Album hot: start -->
-              <div class="media-title mt-50 mb-20">
-                <h3>Chill</h3>
-                <span>Tất cả ></span>
-              </div>
-              <div class="media-cards">
-                <div class="card-item w-1/3">
-                  <div class="card-block">
-                    <div class="card-image"></div>
-                    <div class="card-actions">
-                      <span>heart</span>
-                      <span>play</span>
-                      <span>tripple</span>
-                    </div>
-                  </div>
-                  <p class="card-name">Thả mình vào dòng chảy của những giai điệu</p>
-                </div>
-              </div>
-              <!-- Album hot: end -->
             </div>
           </main>
           <div class="scroll-track"></div>

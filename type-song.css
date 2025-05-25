@@ -1,0 +1,21 @@
+.hub-container .hub-banner .banner-image {
+  min-height: 300px;
+  background-color: #bdc1c7;
+  border-radius: 5px;
+}
+
+.hub-container .hub-block .hub-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.hub-container .hub-block .hub-list .hub-item {
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bdc1c7;
+  border-radius: 5px;
+  cursor: pointer;
+}
